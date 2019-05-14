@@ -1,0 +1,3 @@
+**requestBoat:** Hat die Laufzeitkomplexität von O(1), da keine Schleifen durchlaufen werden. Es wird lediglich mit If-Verzweigungen überprüft, welches Boot gewünscht ist, ein entsprechender Customer angelegt und in die zughörige Queue geaddet und schließlich (falls ein Boot verfügbar ist) die Methode _giveBoat_ aufgerufen, welche ebenfalls keine Schleifen durchläuft, sondern nur mittels mehrerer Verzweigungen überprüft, welchem Customer welches Boot zugeordnet wird. 
+
+**returnBoat:** Hat ebenfalls die Laufzeitkomplexität O(1), da auch hier keine Schleifen durchlaufen werden. Auch hier gibt es lediglich eine If-Verzweigung und einen Aufruf der Methode _giveBoat_.
